@@ -1,0 +1,45 @@
+.top-three-container {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-bottom: 2rem;
+    text-align: center;
+  }
+  
+  .top-three-card {
+    padding: 1rem;
+    border-radius: 12px;
+    background-color: #f1f1f1;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    width: 100px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+  }
+  
+  .top-three-card:hover {
+    transform: scale(1.1);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+  }
+  
+  .top-three-card img {
+    width: 100%;
+    border-radius: 50%;
+  }
+  
+  /* Rank Styles */
+  .first {
+    transform: scale(1.2);
+    background-color: gold;
+  }
+  
+  .second {
+    background-color: silver;
+  }
+  
+  .third {
+    background-color: #cd7f32; /* bronze */
+  }
+  
+  .first:hover {
+    transform: scale(1.3);
+  }

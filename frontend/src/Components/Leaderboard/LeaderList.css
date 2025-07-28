@@ -1,0 +1,54 @@
+.leader-list {
+    width: 50%;
+    padding: 0px 20px;
+    margin-top: 20px;
+    max-height: 300px;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+  
+  .leader-list-item {
+    width: 100%;
+    padding: 12px 20px;
+  }
+  
+  .leader-list-item.even {
+    background-color: #f9f9f9;
+  }
+  
+  .leader-list-item.odd {
+    background-color: #e0e0e0;
+  }
+  
+  .leader-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 8px;
+    padding: 10px 16px;
+    background-color: white;
+    transition: background-color 0.2s ease;
+  }
+  
+  .leader-content:hover {
+    background-color: #d0ebff;
+  }
+  
+  .leader-rank {
+    font-weight: bold;
+    width: 50px;
+  }
+  
+  .leader-name {
+    flex: 1;
+    text-align: left;
+  }
+  
+  .leader-points {
+    font-weight: bold;
+    color: #ff5722;
+  }
+  

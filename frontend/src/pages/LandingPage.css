@@ -1,0 +1,47 @@
+/* LandingPage.css */
+body {
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(to right, #e0f7fa, #fff3e0);
+  }
+  
+  .landing-container {
+    /* height: 100vh; */
+    margin-top: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .landing-box {
+    background: white;
+    padding: 40px 60px;
+    border-radius: 16px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+    text-align: center;
+  }
+  
+  .landing-title {
+    font-size: 32px;
+    margin-bottom: 30px;
+    color: #333;
+  }
+  
+  .landing-buttons button {
+    display: block;
+    width: 100%;
+    padding: 12px 20px;
+    margin: 12px 0;
+    font-size: 18px;
+    border: none;
+    border-radius: 8px;
+    background-color: #0077ff;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .landing-buttons button:hover {
+    background-color: #005bcc;
+  }
+  
