@@ -47,14 +47,14 @@ export default function ClaimHistoryPage() {
 
   useEffect(() => {
     const fetchUsers = async () => {
-      const res = await axios.get('http://localhost:5000/api/users');
+      const res = await axios.get('https://leaderboard-0268.onrender.com/api/users');
       setUsers(res.data);
     };
     fetchUsers();
   }, []);
 
   const handleUserClick = async (user) => {
-    const res = await axios.get(`http://localhost:5000/api/claim-history/user/${user._id}`);
+    const res = await axios.get(`https://leaderboard-0268.onrender.com/api/claim-history/user/${user._id}`);
     setUserHistory(res.data);
     setSelectedUser(user);
   };

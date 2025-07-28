@@ -120,7 +120,7 @@ const LeaderboardPage = () => {
 
   const fetchUsers = async () => {
     try {
-      const res = await axios.get('http://localhost:5000/api/leaderboard');
+      const res = await axios.get('https://leaderboard-0268.onrender.com/api/leaderboard');
       setUsers(res.data);
     } catch (err) {
       console.error(err);
@@ -129,7 +129,7 @@ const LeaderboardPage = () => {
 
   const fetchSearchResults = async (query) => {
     try {
-      const res = await axios.get(`http://localhost:5000/api/users/search?query=${query}`);
+      const res = await axios.get(`https://leaderboard-0268.onrender.com/api/users/search?query=${query}`);
       console.log("Search results:", res.data); // ← Check if API is hit
       setUsers(res.data);
     } catch (err) {
@@ -144,14 +144,14 @@ const LeaderboardPage = () => {
   };
 
   const handleClaimPoints = async (userId) => {
-    await axios.post(`http://localhost:5000/api/claim/${userId}`);
+    await axios.post(`https://leaderboard-0268.onrender.com/api/claim/${userId}`);
     fetchUsers();
     setShowClaimModal(false);
   };
 
   const handleDelete = async (userId) => {
     try {
-      await axios.delete(`http://localhost:5000/api/users/${userId}`);
+      await axios.delete(`https://leaderboard-0268.onrender.com/api/users/${userId}`);
       toast.success("User deleted successfully");
       setSelectedUser(null);
       fetchUsers();

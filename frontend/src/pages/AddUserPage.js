@@ -63,7 +63,7 @@ const handleAdd = async () => {
     }
   
     try {
-      await axios.post('http://localhost:5000/api/users', { name });
+      await axios.post('https://leaderboard-0268.onrender.com/api/users', { name });
       toast.success('User added successfully!');
       setName('');
       

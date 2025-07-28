@@ -3,7 +3,7 @@ import axios from 'axios';
 
 export default function ClaimButton({ selectedUser, onClaim }) {
   const handleClaim = async () => {
-    const res = await axios.post(`http://localhost:5000/api/claim/${selectedUser}`);
+    const res = await axios.post(`https://leaderboard-0268.onrender.com/api/claim/${selectedUser}`);
     onClaim(res.data);
   };
 

@@ -29,11 +29,11 @@ const UserHistoryPage = () => {
 const fetchHistory = async () => {
     try {
       // Fetch history regardless
-      const historyRes = await axios.get(`http://localhost:5000/api/claim-history/user/${userId}`);
+      const historyRes = await axios.get(`https://leaderboard-0268.onrender.com/api/claim-history/user/${userId}`);
       setHistory(historyRes.data);
   
       // Always fetch user info separately
-      const userRes = await axios.get(`http://localhost:5000/api/users/${userId}`);
+      const userRes = await axios.get(`https://leaderboard-0268.onrender.com/api/users/${userId}`);
       setUserName(userRes.data.name);
       
     } catch (err) {
